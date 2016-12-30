@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Войти на сайт</title>
+</head>
+<body>
+{{ errors }}
+
+
+<form action="/login" method="POST">
+   {{ form }}
+
+    {% csrf_token %}
+
+   <button type="submit"> Войти</button>
+</form>
+<span class='a1'><a href='register2' title="Выход">  Регистрация </a></span>
+</body>
+</html>

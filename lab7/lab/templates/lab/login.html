@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{ errors }}
+
+
+<form action="/login" method="POST">
+    <h1>Войти</h1>
+   <label for="login">Логин</label>
+   <input type="text" name="login" id="login" value="{{ login }}"><br>
+
+   <label for="password">Пароль</label>
+   <input type="password" name="password" id="password"><br>
+
+    {% csrf_token %}
+
+   <button type="save">Войти</button>
+</form>
+<span class='a1'><a href='register' title="Выход">  Регистрация </a></span>
+</body>
+</html>

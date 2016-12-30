@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация</title>
+</head>
+<body>
+{{ errors }}
+
+<form action="/register" method="POST">
+   {{ form }}
+    {% csrf_token %}
+   <button type="submit">ОК</button>
+</form>
+</body>
+</html>

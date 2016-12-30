@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{ auth }}
+<p>
+{% if user.is_authenticated %}
+
+    <span class='a1' >Привет, {{user.username}}</span>
+    <span class='a1'><a href='logout' title="Выход">  Выход </a></span>
+{% endif %}
+</p>
+</body>
+</html>

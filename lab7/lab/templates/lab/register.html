@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регстрация</title>
+</head>
+<body>
+{{ errors }}
+<form action="/register" method="POST">
+     <h1>Регистрация</h1>
+   <label for="login">Логин</label>
+   <input type="text" name="login" id="login" value="{{ login }}"><br>
+
+   <label for="password">Пароль</label>
+   <input type="password" name="password" id="password"><br>
+
+   <label for="password">Пароль</label>
+   <input type="password" name="password2" id="password"><br>
+
+   <label for="password">Email</label>
+   <input type="text" name="email" id="password" value="{{ email }}"><br>
+
+   <label for="password">Фамилия</label>
+   <input type="text" name="surname" id="password" value="{{ surname }}"><br>
+
+   <label for="password">Имя</label>
+   <input type="text" name="name" id="password" value="{{ name }}"><br>
+
+    {% csrf_token %}
+   <button type="submit">Ок</button>
+</form>
+</body>
+</html>
